@@ -60,6 +60,7 @@ public class CustomerController {
     }
 
     @GetMapping("/customerdata/v1/fetch")
+
     public ResponseEntity<?> getAllUsers()
     {
         List<Customer> customerList = customerService.getAllCustomer();
