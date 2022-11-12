@@ -66,6 +66,7 @@ public class CustomerController {
         return  new ResponseEntity<>(customerList,HttpStatus.OK);
     }
     @DeleteMapping("/customerdata/v1/del/{customerId}")
+
     public ResponseEntity<?> deleteData(@PathVariable int customerId) throws CustomerNotFoundException{
         return new ResponseEntity<>(customerService.deleteByCustomerId(customerId), HttpStatus.OK);
     }
