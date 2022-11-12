@@ -58,6 +58,7 @@ public class CustomerController {
         Customer createCustomer = customerService.addCustomer(customer);
         return new ResponseEntity(createCustomer, HttpStatus.CREATED);
     }
+
     @GetMapping("/customerdata/v1/fetch")
     public ResponseEntity<?> getAllUsers()
     {
